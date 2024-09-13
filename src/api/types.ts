@@ -56,59 +56,6 @@ export interface Course {
     notes: any[];
 }
 
-/**
- * {
-        "index": 1,
-        "crse_id": "125249",
-        "crse_offer_nbr": 1,
-        "strm": "2248",
-        "session_code": "1",
-        "session_descr": "Regular Academic Session",
-        "class_section": "A3",
-        "location": "CHARLESRIV",
-        "location_descr": "Charles River",
-        "start_dt": "09/03/2024",
-        "end_dt": "12/10/2024",
-        "class_stat": "A",
-        "campus": "MAIN",
-        "campus_descr": "Boston University",
-        "class_nbr": 20231,
-        "acad_career": "UGRD",
-        "acad_career_descr": "Undergraduate",
-        "component": "LEC",
-        "subject": "ENGEK",
-        "subject_descr": "ENGEK Engineering Core",
-        "catalog_nbr": "100",
-        "class_type": "E",
-        "schedule_print": "Y",
-        "acad_group": "ENG",
-        "instruction_mode": "P",
-        "instruction_mode_descr": "In-Person",
-        "acad_org": "ENG",
-        "grading_basis": "Grades",
-        "wait_tot": 0,
-        "wait_cap": 0,
-        "class_capacity": 480,
-        "enrollment_total": 421,
-        "enrollment_available": 59,
-        "descr": "Freshman Advising Seminar",
-        "rqmnt_designtn": "",
-        "units": "0",
-        "combined_section": "N",
-        "enrl_stat": "O",
-        "enrl_stat_descr": "Open",
-        "topic": "",
-        "instructors": [
-            {
-                "name": "To Be Announced",
-                "email": ""
-            }
-        ],
-        "section_type": "Lecture",
-        "meetings": [],
-        "crse_attr": "",
-        "crse_attr_value": "",
-        "reserve_caps": [],
-        "notes": []
-    },
- */
+type CourseSearchDay = 'M' | 'T' | 'W' | 'R' | 'F' | 'S' | 'U';
+
+export type CourseSearchDays = CourseSearchDay[];
