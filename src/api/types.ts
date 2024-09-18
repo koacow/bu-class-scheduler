@@ -59,3 +59,36 @@ export interface Course {
 type CourseSearchDay = 'M' | 'T' | 'W' | 'R' | 'F' | 'S' | 'U';
 
 export type CourseSearchDays = CourseSearchDay[];
+
+export interface CourseSearchOptions {
+    institution?: string,
+    term?: number,
+    date_from?: string,
+    date_thru?: string,
+    subject?: string,
+    subject_like?: string,
+    catalog_nbr?: number | string,
+    start_time_equals?: string,
+    start_time_ge?: string,
+    end_time_equals?: string,
+    end_time_le?: string,
+    days?: CourseSearchDays,
+    campus?: string,
+    location?: string,
+    x_acad_career?: string,
+    acad_group?: string,
+    rqmnt_designtn?: string,
+    instruction_mode?: string,
+    keyword?: string,
+    class_nbr?: number,
+    acad_org?: string,
+    enrl_stat?: string,
+    crse_attr?: string,
+    crse_attr_value?: string,
+    instructor_name?: string,
+    instr_first_name?: string,
+    session_code?: number,
+    units?: number,
+    trigger_search?: string,
+    page?: number 
+}

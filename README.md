@@ -1,6 +1,6 @@
 # BU Class Scheduler
 
-**unaffiliated with Boston University**
+**Unaffiliated with Boston University**
 
 ## Features
 
