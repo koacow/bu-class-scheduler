@@ -11,10 +11,11 @@ function App() {
     palette: {
       mode: 'dark',
       primary: {
-        main: '#ff5722',
+        main: '#cc0000',
+        
       },
       secondary: {
-        main: '#ff5722',
+        main: '#2D2926',
       },
     },
   }))
