@@ -2,7 +2,6 @@ import { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Collapse from '@mui/material/Collapse';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { searchFields, advancedSearchFields } from './fields';
 export default function CourseSearch() {
@@ -14,13 +13,14 @@ export default function CourseSearch() {
         <>
             <Box>
                 {
-                    searchFields.map(({ label, type }) => {
+                    searchFields.map(({ label, type, required }) => {
                         return(
                             <TextField
                                 key={label}
                                 label={label}
                                 type={type}
                                 select={type === 'select'}
+                                required={required}
                             />
                         )
                     })
@@ -37,13 +37,14 @@ export default function CourseSearch() {
             <Collapse in={advancedSearchFieldsVisible}>
                 <Box>
                     {
-                        advancedSearchFields.map(({ label, type }) => {
+                        advancedSearchFields.map(({ label, type, required }) => {
                             return(
                                 <TextField
                                     key={label}
                                     label={label}
                                     type={type}
                                     select={type === 'select'}
+                                    required={required}
                                 />
                             )
                         })
