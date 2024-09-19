@@ -1,0 +1,88 @@
+{
+    "BU": {
+        "name": "Boston University",
+        "code": "BU",
+        "subjects": [
+            {
+                "name": "BU Academy",
+                "code": "BUABU"
+            },
+            {
+                "name": "Core Curriculum",
+                "code": "HUBCC"
+            }
+        ]
+    },
+    "CAS": {
+        "name": "College of Arts & Sciences",
+        "code": "CAS"
+    },
+    "CDS": {
+        "name": "Faculty of Computing & Data Sciences",
+        "code": "CDS"
+    },
+    "CGS": {
+        "name": "College of General Studies",
+        "code": "CGS"
+    },
+    "CFA": {
+        "name": "College of Fine Arts",
+        "code": "CFA"
+    },
+    "COM": {
+        "name": "College of Communication",
+        "code": "COM"
+    },
+    "ENG": {
+        "name": "College of Engineering",
+        "code": "ENG"
+    },
+    "GMS": {
+        "name": "Graduate Medical Sciences",
+        "code": "GMS"
+    },
+    "KHC": {
+        "name": "Kilachand Honors College",
+        "code": "KHC"
+    },
+    "LAW": {
+        "name": "School of Law",
+        "code": "LAW"
+    },
+    "MET": {
+        "name": "Metropolitan College",
+        "code": "MET"
+    },
+    "QST": {
+        "name": "Questrom School of Business",
+        "code": "QST"
+    },
+    "SAR": {
+        "name": "Sargent College Health & Rehab",
+        "code": "SAR"
+    },
+    "SDM": {
+        "name": "School of Dental Medicine",
+        "code": "SDM"
+    },
+    "SPH": {
+        "name": "School of Public Health",
+        "code": "SPH"
+    },
+    "SSW": {
+        "name": "School of Social Work",
+        "code": "SSW"
+    },
+    "STH": {
+        "name": "School of Theology",
+        "code": "STH"
+    },
+    "WED": {
+        "name": "Wheelock College of Education",
+        "code": "WED"
+    },
+    "SHA": {
+        "name": "School of Hospitality Administration",
+        "code": "SHA"
+    }
+}
