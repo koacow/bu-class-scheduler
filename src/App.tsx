@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import { 
   RouterProvider, 
   Route, 
@@ -23,10 +23,17 @@ const LinkBehavior = React.forwardRef<
   return <RouterLink data-testid="custom-link" ref={ref} to={href} {...other} />;
 });
 
+export const DarkModeContext = createContext({
+  darkMode: false,
+  setDarkMode: (value: boolean) => {},
+});
+
 function App() {
+  const [ darkMode, setDarkMode ] = useState(false);
+
   const theme = responsiveFontSizes(createTheme({
     palette: {
-      mode: 'dark',
+      mode: darkMode ? 'dark' : 'light',
       primary: {
         main: '#cc0000',
         
@@ -54,7 +61,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <RouterProvider router={router} />
+      <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
+        <RouterProvider router={router} />
+      </DarkModeContext.Provider>
     </ThemeProvider>
   )
 }
